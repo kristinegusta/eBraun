@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 const Section = ({ children, name, color }) => {
   return (
-    <Wrapper id={name}>
-      <Content color={color}>{children}</Content>
+    <Wrapper color={color} id={name}>
+      <Content>{children}</Content>
     </Wrapper>
   );
 };
@@ -16,6 +16,8 @@ const Wrapper = styled.div`
   padding: 5rem 0;
   width: 100%;
   z-index: 1;
+  background-color: ${(props) =>
+    props.color === "dark" ? "var(--background-dark)" : "unset"};
   @media ${device.laptopL} {
     padding: 8rem 0;
   }
@@ -24,13 +26,9 @@ const Wrapper = styled.div`
   }
 `;
 
-const Content = styled.div`
+const Content = styled.section`
   margin: 0 auto;
   padding: 0 16px;
-
-  color: ${(props) =>
-    props.color === "dark" ? "#FFFFFF" : "var(--text-dark)"};
-
   @media ${device.mobileL} {
     max-width: 650px;
   }
@@ -47,12 +45,3 @@ const Content = styled.div`
     max-width: 1300px;
   }
 `;
-
-// background-color: ${(props) =>
-//   props.color === "dark"
-//     ? "#001C3D"
-//     : props.color === "lightGrey"
-//     ? "#FAFBFC"
-//     : props.color === "darkGrey"
-//     ? "#F5F6FA"
-//     : "white"};

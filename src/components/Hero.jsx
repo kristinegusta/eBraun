@@ -11,7 +11,7 @@ export default function Hero() {
     <MainWrapper>
       <Overlay />
       {/* Navbar will come later */}
-      <Section name="hero" color="dark">
+      <Section name="hero">
         <Title>Achieving Equine Harmony - E'Braun Equine Physiotherapy</Title>
         <HeroP>Balancing, Enhancing, and Transforming Every Stride.</HeroP>
         {/* Balancing, Enhancing, and Transforming Every Stride. */}
@@ -72,6 +72,7 @@ const Title = styled.h1`
   line-height: 1.1;
   margin-bottom: 20px;
   font-size: 38px;
+  color: white;
   @media ${device.laptop} {
     font-size: 48px;
   }

@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import NavbarDesktop from "../components/NavbarDesktop";
 import About from "../components/About";
 import Services from "../components/Services";
+import Qualifications from "../components/Qualifications";
 
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
       <Hero />
       <About />
       <Services />
+      <Qualifications />
     </>
   );
 }

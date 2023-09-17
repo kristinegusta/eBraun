@@ -8,7 +8,7 @@ import { ReactComponent as Horse } from "../svg/horse-black-shape-of-polygons-sv
 
 export default function Services() {
   return (
-    <Section name="services">
+    <Section name="services" color="dark">
       <article>
         <Title>Treatment tailored to your needs </Title>
         <p>

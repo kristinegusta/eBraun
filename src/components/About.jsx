@@ -7,7 +7,7 @@ import { device } from "../breakpoints";
 
 export default function About() {
   return (
-    <Section name="about">
+    <Section name="about" color="dark">
       <AboutContainer>
         <Box>
           <h2>

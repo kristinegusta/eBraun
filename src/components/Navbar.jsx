@@ -113,7 +113,7 @@ const LogoContainer = styled.div`
 
 const Menu = styled.button`
   font-size: 28px;
-  color: white;
+  color: var(--primary);
   background: none;
   border: none;
   cursor: pointer;

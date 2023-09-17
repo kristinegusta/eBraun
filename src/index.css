@@ -7,6 +7,8 @@
   /* Text color */
   --text-dark: #212121;
   --text-lighter: #545454;
+  /* Background colors */
+  --background-dark: #f7f8f9;
 }
 
 * {
