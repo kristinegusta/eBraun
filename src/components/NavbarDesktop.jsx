@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
 import Logo from "../images/logo-white.png";
@@ -6,8 +6,23 @@ import { BsInstagram } from "react-icons/bs";
 import { device } from "../breakpoints";
 
 export default function NavbarDesktop() {
+  const [navbarBackground, setNavbarBackground] = useState("transparent");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setNavbarBackground("var(--grey)");
+      } else {
+        setNavbarBackground("transparent");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <Navbar>
+    <Navbar style={{ backgroundColor: navbarBackground }}>
       <FullHeightLink smooth to="/#hero">
         <LogoContainer />
       </FullHeightLink>
@@ -51,11 +66,12 @@ const Navbar = styled.nav`
   top: 0;
   width: 100%;
   z-index: 2;
-  height: 130px;
+  height: 100px;
   color: white;
   padding: 10px 2rem;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s ease;
   @media ${device.laptop} {
     display: flex;
     padding: 10px 5rem;
@@ -70,7 +86,7 @@ const Navbar = styled.nav`
 
 const LogoContainer = styled.div`
   background-image: url(${Logo});
-  width: 230px;
+  width: 180px;
   height: 100%;
   background-size: cover;
   background-position: center;

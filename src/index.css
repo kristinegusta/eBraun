@@ -24,6 +24,16 @@ h2 {
   font-family: "DM Serif Display", serif;
 }
 
+h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
 a {
   text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
 }
