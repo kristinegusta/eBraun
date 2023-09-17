@@ -12,11 +12,8 @@ export default function Hero() {
       <Overlay />
       {/* Navbar will come later */}
       <Section name="hero" color="dark">
-        <Title>Achieving Equine Harmony</Title>
-        <p>
-          Elizabete Brauna Equine Physiotherapy. Balancing, Enhancing, and
-          Transforming Every Stride.
-        </p>
+        <Title>Achieving Equine Harmony - E'Braun Equine Physiotherapy</Title>
+        <HeroP>Balancing, Enhancing, and Transforming Every Stride.</HeroP>
         {/* Balancing, Enhancing, and Transforming Every Stride. */}
         <ReadMore smooth to="/#about">
           Read more
@@ -86,4 +83,10 @@ const Title = styled.h1`
 const DownIcon = styled(FiChevronsDown)`
   margin-left: 4px;
   font-size: 16px;
+`;
+
+const HeroP = styled.p`
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
 `;

@@ -171,4 +171,5 @@ const Seperator = styled.hr`
 const StyledIcon = styled.div`
   margin-bottom: 12px;
   font-size: 16px;
+  color: var(--primary);
 `;

@@ -6,6 +6,7 @@
   --grey: #545454;
   /* Text color */
   --text-dark: #212121;
+  --text-lighter: #545454;
 }
 
 * {
@@ -20,7 +21,8 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "DM Serif Display", serif;
 }
 
@@ -36,4 +38,5 @@ a {
 
 p {
   line-height: 1.5;
+  color: var(--text-lighter);
 }

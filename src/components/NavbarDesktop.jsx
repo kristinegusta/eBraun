@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
 import Logo from "../images/logo-white.png";
-import { BsInstagram } from "react-icons/bs";
+import { FaWhatsapp } from "react-icons/fa";
 import { device } from "../breakpoints";
 
 export default function NavbarDesktop() {
@@ -51,9 +51,9 @@ export default function NavbarDesktop() {
         </Links>
         <ContactElement>
           <StyledIcon>
-            <BsInstagram />
+            <FaWhatsapp />
           </StyledIcon>
-          pringelv
+          +31 6 20755961
         </ContactElement>
       </Container>
     </Navbar>
@@ -117,6 +117,9 @@ const Link = styled.li`
 const ContactElement = styled.div`
   display: flex;
   align-items: center;
+  padding: 13px 40px;
+  border: 1px solid;
+  font-size: 14px;
 `;
 
 const SideLink = styled(HashLink)`
@@ -144,4 +147,5 @@ const StyledIcon = styled.div`
   font-size: 16px;
   margin-right: 8px;
   height: 16px;
+  color: var(--primary);
 `;

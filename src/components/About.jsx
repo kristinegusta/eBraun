@@ -15,18 +15,24 @@ export default function About() {
             Physiotherapist with passion for equine wellbeing
           </h2>
           <p style={{ marginBottom: "20px" }}>
-            Lorem ipsum dolor sit amet. Est ipsum debitis qui atque libero est
-            odit ullam. Est harum molestias qui architecto inventore et fugit
-            quia et nostrum officia et delectus voluptatem in voluptatem libero.
+            Passionate about the health and happiness of horses, I am Elizabete
+            Brauna, a dedicated equine physiotherapist. With years of experience
+            and a deep commitment to the wellbeing of these magnificent
+            creatures, I specialize in providing top-notch care to ensure your
+            horse's optimal performance and comfort. Trust me to be your partner
+            in promoting equine wellness and vitality.
           </p>
           <Image src={Beta} />
         </Box>
         <Box>
           <Image src={Beta3} />
           <p style={{ marginTop: "20px" }}>
-            Lorem ipsum dolor sit amet. Est ipsum debitis qui atque libero est
-            odit ullam. Est harum molestias qui architecto inventore et fugit
-            quia et nostrum officia et delectus voluptatem in voluptatem libero.
+            With a profound understanding of equine physiology and a keen eye
+            for detail, I've dedicated my career to helping horses thrive.
+            Whether it's alleviating pain, enhancing performance, or ensuring a
+            swift recovery, I bring expertise, compassion, and a true passion
+            for equine wellbeing to every session. Your horse deserves the best,
+            and I'm here to provide it.
           </p>
         </Box>
       </AboutContainer>
