@@ -1,5 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@100;200;300;400;500;700&display=swap");
+
+:root {
+  /* Color scheme */
+  --primary: #009dd4;
+  --grey: #545454;
+  /* Text color */
+  --text-dark: #212121;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+#root {
+  position: relative;
+}
+
+h1,
+h2 {
+  font-family: "DM Serif Display", serif;
+}
+
+a {
+  text-decoration: none;
 }
