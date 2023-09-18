@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/eBraun/static/css/main.5bac0854.css",
+    "main.css": "/eBraun/static/css/main.a30bed96.css",
     "main.js": "/eBraun/static/js/main.e5f9113d.js",
     "static/media/Beta1.png": "/eBraun/static/media/Beta1.2971f03f2242cedc4d3b.png",
     "static/media/form.jpg": "/eBraun/static/media/form.1ee45d78f297ddc217b1.jpg",
@@ -12,11 +12,11 @@
     "static/media/bridge-svgrepo-com 1.svg": "/eBraun/static/media/bridge-svgrepo-com 1.439d22c4dcdd3503dbbc4172f1d8028d.svg",
     "static/media/performance-svgrepo-com 1.svg": "/eBraun/static/media/performance-svgrepo-com 1.ae08406b5afd4d41ce28991aacf30245.svg",
     "index.html": "/eBraun/index.html",
-    "main.5bac0854.css.map": "/eBraun/static/css/main.5bac0854.css.map",
+    "main.a30bed96.css.map": "/eBraun/static/css/main.a30bed96.css.map",
     "main.e5f9113d.js.map": "/eBraun/static/js/main.e5f9113d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bac0854.css",
+    "static/css/main.a30bed96.css",
     "static/js/main.e5f9113d.js"
   ]
 }
