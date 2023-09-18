@@ -16,13 +16,16 @@ export default function Qualifications() {
         </p>
         <QualificationsList>
           <QualificationsListItem>
-            orem ipsum dolor sit amet
+            Certified in Equine Rehabilitation
           </QualificationsListItem>
           <QualificationsListItem>
-            orem ipsum dolor sit amet
+            Extensive experience in equine injury recovery
           </QualificationsListItem>
           <QualificationsListItem>
-            orem ipsum dolor sit amet
+            Trained in advanced equine massage techniques
+          </QualificationsListItem>
+          <QualificationsListItem>
+            Expertise in equine nutrition and dietary management
           </QualificationsListItem>
         </QualificationsList>
       </QualificationsText>
@@ -49,7 +52,7 @@ const QualificationsImage = styled.div`
   @media ${device.tablet} {
     width: 50%;
     margin: 0;
-    height: 700px;
+    height: unset;
   }
 `;
 
@@ -58,11 +61,14 @@ const QualificationsText = styled.article`
     & p {
       max-width: 65ch;
     }
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 5rem 3rem;
     width: 50%;
+    @media ${device.laptop} {
+      padding: 8rem 3rem;
+    }
+    @media ${device.desktop} {
+      padding: 9rem 3rem;
+    }
   }
 `;
 
