@@ -2,9 +2,9 @@ import React from "react";
 import { device } from "../assets/breakpoints";
 import styled from "styled-components";
 
-const Section = ({ children, name, color, noTopPadding }) => {
+const Section = ({ children, name, color, notoppadding }) => {
   return (
-    <Wrapper color={color} id={name} noTopPadding={noTopPadding}>
+    <Wrapper color={color} id={name} notoppadding={notoppadding}>
       <Content>{children}</Content>
     </Wrapper>
   );
@@ -15,14 +15,15 @@ export default Section;
 const Wrapper = styled.div`
   width: 100%;
   z-index: 1;
-  padding: ${(props) => (props.noTopPadding ? "0 0 5rem 0" : "5rem 0")};
+  position: relative;
+  padding: ${(props) => (props.notoppadding ? "0 0 5rem 0" : "5rem 0")};
   background-color: ${(props) =>
     props.color === "dark" ? "var(--background-dark)" : "unset"};
   @media ${device.laptop} {
-    padding: ${(props) => (props.noTopPadding ? "0 0 8rem 0" : "8rem 0")};
+    padding: ${(props) => (props.notoppadding ? "0 0 8rem 0" : "8rem 0")};
   }
   @media ${device.desktop} {
-    padding: ${(props) => (props.noTopPadding ? "0 0 9rem 0" : "9rem 0")};
+    padding: ${(props) => (props.notoppadding ? "0 0 9rem 0" : "9rem 0")};
   }
 `;
 

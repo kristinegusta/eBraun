@@ -34,7 +34,7 @@ export default function Qualifications() {
 }
 
 const QualificationsContainer = styled.section`
-  padding: 0 16px;
+  padding: 0 16px 5rem 16px;
   @media ${device.tablet} {
     display: flex;
     justify-content: space-between;
@@ -79,11 +79,14 @@ const QualificationsList = styled.ul`
 `;
 
 const QualificationsListItem = styled.li`
-  margin: 20px 0 20px 36px;
+  margin: 20px 0 20px 16px;
   &::before {
     content: "✓";
     color: var(--primary);
     font-size: 20px;
     margin-right: 10px;
+  }
+  @media ${device.tablet} {
+    margin: 20px 0 20px 36px;
   }
 `;

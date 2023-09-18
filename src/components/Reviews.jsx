@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Section from "./Section";
 import styled from "styled-components";
 import { device } from "../assets/breakpoints";

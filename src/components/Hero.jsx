@@ -10,12 +10,19 @@ export default function Hero() {
   return (
     <MainWrapper>
       <Overlay />
-      {/* Navbar will come later */}
       <Section name="hero">
-        <Title>Achieving Equine Harmony - E'Braun Equine Physiotherapy</Title>
-        <HeroP>Balancing, Enhancing, and Transforming Every Stride.</HeroP>
-        {/* Balancing, Enhancing, and Transforming Every Stride. */}
-        <ReadMore smooth to="/#about">
+        <Title data-aos="fade-left" data-aos-duration="1000">
+          Achieving Equine Harmony - E'Braun Equine Physiotherapy
+        </Title>
+        <HeroP data-aos="fade-left" data-aos-duration="1000">
+          Balancing, Enhancing, and Transforming Every Stride.
+        </HeroP>
+        <ReadMore
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          smooth
+          to="/#about"
+        >
           Read more
           <DownIcon />
         </ReadMore>
