@@ -56,6 +56,7 @@ const HeroP = styled.p`
   color: white;
   font-weight: 300;
   font-size: 16px;
+  margin-bottom: 20px;
   @media ${device.tablet} {
     max-width: 65ch;
   }
