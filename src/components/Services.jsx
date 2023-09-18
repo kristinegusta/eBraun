@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "./Section";
 import styled from "styled-components";
-import { device } from "../breakpoints";
+import { device } from "../assets/breakpoints";
 import { ReactComponent as Performance } from "../svg/performance-svgrepo-com 1.svg";
 import { ReactComponent as Bridge } from "../svg/bridge-svgrepo-com 1.svg";
 import { ReactComponent as Horse } from "../svg/horse-black-shape-of-polygons-svgrepo-com 1.svg";

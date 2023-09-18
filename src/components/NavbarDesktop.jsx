@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
 import Logo from "../images/logo-white.png";
 import { FaWhatsapp } from "react-icons/fa";
-import { device } from "../breakpoints";
+import { device } from "../assets/breakpoints";
 
 export default function NavbarDesktop() {
   const [navbarBackground, setNavbarBackground] = useState("transparent");

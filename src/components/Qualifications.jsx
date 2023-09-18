@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Beta from "../images/Beta1.png";
-import { device } from "../breakpoints";
+import { device } from "../assets/breakpoints";
 
 export default function Qualifications() {
   return (

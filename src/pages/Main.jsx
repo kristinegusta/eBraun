@@ -4,6 +4,7 @@ import NavbarDesktop from "../components/NavbarDesktop";
 import About from "../components/About";
 import Services from "../components/Services";
 import Qualifications from "../components/Qualifications";
+import Reviews from "../components/Reviews";
 
 function Main() {
   return (
@@ -14,6 +15,7 @@ function Main() {
       <About />
       <Services />
       <Qualifications />
+      <Reviews />
     </>
   );
 }

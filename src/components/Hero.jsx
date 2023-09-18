@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "./Section";
-import { device } from "../breakpoints";
+import { device } from "../assets/breakpoints";
 import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
 import HeroImage from "../images/hero.jpg";

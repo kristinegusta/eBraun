@@ -1,5 +1,5 @@
 import React from "react";
-import { device } from "../breakpoints";
+import { device } from "../assets/breakpoints";
 import styled from "styled-components";
 
 const Section = ({ children, name, color, noTopPadding }) => {

@@ -11,7 +11,7 @@ import {
   MdPersonOutline,
 } from "react-icons/md";
 import { LiaHorseHeadSolid } from "react-icons/lia";
-import { device } from "../breakpoints";
+import { device } from "../assets/breakpoints";
 
 export default function Navbar() {
   const [dropdownMobile, setDropdownMobile] = useState(false);

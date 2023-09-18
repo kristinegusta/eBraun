@@ -3,7 +3,7 @@ import Section from "./Section";
 import styled from "styled-components";
 import Beta from "../images/beta2.jpg";
 import Beta3 from "../images/Beta4.jpg";
-import { device } from "../breakpoints";
+import { device } from "../assets/breakpoints";
 
 export default function About() {
   return (
