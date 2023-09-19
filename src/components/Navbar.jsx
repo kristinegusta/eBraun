@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Transition } from "react-transition-group";
 import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
@@ -29,6 +29,18 @@ export default function Navbar() {
     entered: { width: "100vw" },
     exited: { width: "0" },
   };
+
+  useEffect(() => {
+    if (dropdownMobile) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [dropdownMobile]);
 
   return (
     <>
@@ -150,7 +162,6 @@ const SideNavigation = styled(Div100vh)`
 const SideLinks = styled.ul`
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
 `;
 
 const SideListItem = styled.li`
@@ -175,7 +186,7 @@ const Seperator = styled.hr`
     rgba(255, 250, 250, 0.75),
     rgba(0, 0, 0, 0)
   );
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 `;
 
 const StyledIcon = styled.div`

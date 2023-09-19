@@ -9,7 +9,7 @@ export default function FormSection() {
   return (
     <MainWrapper>
       <Overlay />
-      <Section name="contact">
+      <Section>
         <Flex>
           <TextContainer>
             <Title>Get in touch</Title>
@@ -27,13 +27,16 @@ export default function FormSection() {
   );
 }
 
-const MainWrapper = styled.header`
+const MainWrapper = styled.div`
   width: 100%;
   background-image: url(${Form});
   background-size: cover;
-  background-position: top;
+  background-position: left;
   position: relative;
   background-attachment: fixed;
+  @media ${device.tablet} {
+    background-position: top;
+  }
 `;
 
 const Overlay = styled.div`

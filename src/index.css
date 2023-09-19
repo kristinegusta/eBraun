@@ -9,6 +9,8 @@
   --text-lighter: #545454;
   /* Background colors */
   --background-dark: #f7f8f9;
+  /* Padding values */
+  --padding-sm: 5rem;
 }
 
 * {
@@ -55,4 +57,8 @@ p {
 
 .es-widget-title {
   display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
