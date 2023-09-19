@@ -65,7 +65,7 @@ const Navbar = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 4;
   height: 100px;
   color: white;
   padding: 10px 2rem;

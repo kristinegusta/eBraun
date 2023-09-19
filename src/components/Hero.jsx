@@ -5,33 +5,36 @@ import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
 import HeroImage from "../images/hero.jpg";
 import { FiChevronsDown } from "react-icons/fi";
+import Div100vh from "react-div-100vh";
 
 export default function Hero() {
   return (
     <MainWrapper>
       <Overlay />
       <Section name="hero">
-        <Title data-aos="fade-left" data-aos-duration="1000">
-          Achieving Equine Harmony - E'Braun Equine Physiotherapy
-        </Title>
-        <HeroP data-aos="fade-left" data-aos-duration="1000">
-          Balancing, Enhancing, and Transforming Every Stride.
-        </HeroP>
-        <ReadMore
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          smooth
-          to="/#about"
-        >
-          Read more
-          <DownIcon />
-        </ReadMore>
+        <header>
+          <Title data-aos="fade-left" data-aos-duration="1000">
+            Achieving Equine Harmony - E'Braun Equine Physiotherapy
+          </Title>
+          <HeroP data-aos="fade-left" data-aos-duration="1000">
+            Balancing, Enhancing, and Transforming Every Stride.
+          </HeroP>
+          <ReadMore
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            smooth
+            to="/#about"
+          >
+            Read more
+            <DownIcon />
+          </ReadMore>
+        </header>
       </Section>
     </MainWrapper>
   );
 }
 
-const MainWrapper = styled.header`
+const MainWrapper = styled(Div100vh)`
   width: 100vw;
   height: 100vh;
   display: flex;

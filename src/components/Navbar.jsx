@@ -10,8 +10,10 @@ import {
   MdOutlineEmail,
   MdPersonOutline,
 } from "react-icons/md";
+import { AiOutlineClose } from "react-icons/ai";
 import { LiaHorseHeadSolid } from "react-icons/lia";
 import { device } from "../assets/breakpoints";
+import Div100vh from "react-div-100vh";
 
 export default function Navbar() {
   const [dropdownMobile, setDropdownMobile] = useState(false);
@@ -24,7 +26,7 @@ export default function Navbar() {
     width: "0px",
   };
   const transitionStyles = {
-    entered: { width: "80vw" },
+    entered: { width: "100vw" },
     exited: { width: "0" },
   };
 
@@ -32,7 +34,14 @@ export default function Navbar() {
     <>
       <Navigation>
         <Menu onClick={handleClick}>
-          <CgMenuGridO />
+          {dropdownMobile ? (
+            <AiOutlineClose
+              className="mobile-nav-toggle"
+              onClick={handleClick}
+            />
+          ) : (
+            <CgMenuGridO />
+          )}
         </Menu>
       </Navigation>
       <Transition in={dropdownMobile} timeout={300}>
@@ -45,40 +54,42 @@ export default function Navbar() {
           >
             <LogoContainer />
             <Seperator />
-            <SideLinks>
-              <SideListItem>
-                <SideLink smooth to="/#about">
-                  <StyledIcon>
-                    <MdPersonOutline />
-                  </StyledIcon>
-                  About
-                </SideLink>
-              </SideListItem>
-              <SideListItem>
-                <SideLink smooth to="/#services">
-                  <StyledIcon>
-                    <LiaHorseHeadSolid />
-                  </StyledIcon>
-                  Services
-                </SideLink>
-              </SideListItem>
-              <SideListItem>
-                <SideLink smooth to="/#testimonials">
-                  <StyledIcon>
-                    <MdOutlineReviews />
-                  </StyledIcon>
-                  Testimonials
-                </SideLink>
-              </SideListItem>
-              <SideListItem>
-                <SideLink smooth to="/#contact">
-                  <StyledIcon>
-                    <MdOutlineEmail />
-                  </StyledIcon>
-                  Contact
-                </SideLink>
-              </SideListItem>
-            </SideLinks>
+            <nav>
+              <SideLinks>
+                <SideListItem>
+                  <SideLink smooth to="/#about" onClick={handleClick}>
+                    <StyledIcon>
+                      <MdPersonOutline />
+                    </StyledIcon>
+                    About
+                  </SideLink>
+                </SideListItem>
+                <SideListItem>
+                  <SideLink smooth to="/#services" onClick={handleClick}>
+                    <StyledIcon>
+                      <LiaHorseHeadSolid />
+                    </StyledIcon>
+                    Services
+                  </SideLink>
+                </SideListItem>
+                <SideListItem>
+                  <SideLink smooth to="/#testimonials" onClick={handleClick}>
+                    <StyledIcon>
+                      <MdOutlineReviews />
+                    </StyledIcon>
+                    Testimonials
+                  </SideLink>
+                </SideListItem>
+                <SideListItem>
+                  <SideLink smooth to="/#contact" onClick={handleClick}>
+                    <StyledIcon>
+                      <MdOutlineEmail />
+                    </StyledIcon>
+                    Contact
+                  </SideLink>
+                </SideListItem>
+              </SideLinks>
+            </nav>
           </SideNavigation>
         )}
       </Transition>
@@ -90,7 +101,7 @@ const Navigation = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   height: 80px;
   color: white;
   padding: 10px 16px;
@@ -119,14 +130,13 @@ const Menu = styled.button`
   cursor: pointer;
 `;
 
-const SideNavigation = styled.nav`
-  transition: 0.3s all ease;
-  height: 100vh;
+const SideNavigation = styled(Div100vh)`
+  transition: 0.3s width ease;
   width: 80vw;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 2;
   background-color: var(--grey);
   overflow-x: hidden;
   display: flex;
