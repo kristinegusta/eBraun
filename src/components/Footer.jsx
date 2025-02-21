@@ -59,6 +59,7 @@ const LogoContainer = styled.div`
   width: 270px;
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   margin-bottom: 3rem;
   @media ${device.tablet} {
     display: block;
