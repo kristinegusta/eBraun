@@ -1,23 +1,15 @@
 {
   "files": {
-    "main.css": "/eBraun/static/css/main.06cfdbd6.css",
-    "main.js": "/eBraun/static/js/main.227f58db.js",
-    "static/media/Beta1.png": "/eBraun/static/media/Beta1.2971f03f2242cedc4d3b.png",
-    "static/media/form.jpg": "/eBraun/static/media/form.1ee45d78f297ddc217b1.jpg",
-    "static/media/hero.jpg": "/eBraun/static/media/hero.6c990543fd7abe73b7a7.jpg",
-    "static/media/beta2.jpg": "/eBraun/static/media/beta2.5835dd8bfcd4db32fe42.jpg",
-    "static/media/Beta4.jpg": "/eBraun/static/media/Beta4.ae3f210ea6928b6bf054.jpg",
-    "static/media/logo-white.png": "/eBraun/static/media/logo-white.813e9fed5e7899d09583.png",
-    "static/media/elizabete.png": "/eBraun/static/media/elizabete.b990cc5a468c3beb025b.png",
-    "static/media/horse-black-shape-of-polygons-svgrepo-com 1.svg": "/eBraun/static/media/horse-black-shape-of-polygons-svgrepo-com 1.3d1ee7b06c1d245e73f43b3b8c22f9bb.svg",
-    "static/media/bridge-svgrepo-com 1.svg": "/eBraun/static/media/bridge-svgrepo-com 1.439d22c4dcdd3503dbbc4172f1d8028d.svg",
-    "static/media/performance-svgrepo-com 1.svg": "/eBraun/static/media/performance-svgrepo-com 1.ae08406b5afd4d41ce28991aacf30245.svg",
+    "main.css": "/eBraun/static/css/main.35d0a1ad.css",
+    "main.js": "/eBraun/static/js/main.f92d44c0.js",
+    "static/media/hero-small.jpg": "/eBraun/static/media/hero-small.6c243399f61b70bfbba8.jpg",
+    "static/media/hero.jpg": "/eBraun/static/media/hero.51054ef2b3357d1f30aa.jpg",
     "index.html": "/eBraun/index.html",
-    "main.06cfdbd6.css.map": "/eBraun/static/css/main.06cfdbd6.css.map",
-    "main.227f58db.js.map": "/eBraun/static/js/main.227f58db.js.map"
+    "main.35d0a1ad.css.map": "/eBraun/static/css/main.35d0a1ad.css.map",
+    "main.f92d44c0.js.map": "/eBraun/static/js/main.f92d44c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.06cfdbd6.css",
-    "static/js/main.227f58db.js"
+    "static/css/main.35d0a1ad.css",
+    "static/js/main.f92d44c0.js"
   ]
 }
